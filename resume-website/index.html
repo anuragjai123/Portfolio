@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="" type="">
+  <title>Anurag Jaiswal | Web Developer</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        Resume Website
+      </div>
+      <div class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+
+    <div class="content">
+      <h2>Hi, I'm Anurag 👋</h2>
+      <p>Aspiring MERN Stack & Python Developer</p>
+      <a href="assets/Anurag jaiswal.pdf" class="btn">Download Resume</a>
+      <a href="#contact" class="btn" id="btn" onclick="opencontact(btn)">Contact Me</a>
+    </div>
+   
+    <div class="hero-img"><img class="image" height="400" width="400" src="ChatGPT Image Mar 29, 2025, 06_32_43 PM.png"
+        alt=""></div>
+
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I'm Anurag, a passionate MERN stack and Python learner exploring creative tech projects that bridge web
+        development with AI. I love solving real-world problems and sharing knowledge through content creation.
+      </p>
+
+      <!-- 🔧 Skills -->
+      <div class="skills">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Python</span>
+        <span class="badge">MongoDB</span>
+        <span class="badge">Node.js</span>
+      </div>
+
+      <!-- 💡 Fun Fact -->
+      <p class="fun-fact">
+        💡 Fun Fact: I once built a sentiment analysis dashboard with Python + Express just for fun!
+      </p>
+    </div>
+  </section>
+
+  <section class="projects" id ="projects">
+ <div>   <h2>Projects</h2></div>
+    <div class="project-content">
+
+      <div class="project-card" onclick="openModal('project1')">
+        <h3>📌 Portfolio Website</h3>
+        <p>A sleek interactive resume with dark mode and animated timeline.</p>
+      </div>
+      <div class="project-card" onclick="openModal('project1')">
+        <h3>📌 Portfolio Website</h3>
+        <p>A sleek interactive resume with dark mode and animated timeline.</p>
+      </div>
+      <div class="project-card" onclick="openModal('project1')">
+        <h3>📌 Portfolio Website</h3>
+        <p>A sleek interactive resume with dark mode and animated timeline.</p>
+      </div>
+
+    </div>
+    <!-- Modal -->
+    <div id="project1" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('project1')">&times;</span>
+        <h2> Project Description</h2>
+        <p>This project uses HTML, CSS, JavaScript, and EJS to create a modern personal website. Features include a
+          dynamic timeline, responsive layout, and contact form validation.</p>
+        <a href="https://live-portfolio-link.com" target="_blank">🔗 Live Link</a><br>
+        <a href="https://github.com/username/portfolio-project" target="_blank">💻 View Code</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="timeline">
+    <h2>🎓 Education & 💼 Experience</h2>
+    <div class="timeline-item">
+      <div class="timeline-date">2018 - 2019</div>
+      <div class="timeline-content">
+        <h3>Class 10 (High School)</h3>
+        <p>Completed secondary education with a strong foundation in mathematics, science, and computer basics.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2020 - 2021</div>
+      <div class="timeline-content">
+        <h3>Class 12 (Senior Secondary)</h3>
+        <p>Focused on physics, chemistry, mathematics, and computer science, laying the groundwork for a tech-driven
+          career.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2022 - 2025</div>
+      <div class="timeline-content">
+        <h3>Bachelor's Degree in Computer Science</h3>
+        <p>United Institute of Management (FUGS)-Focused on software development, data structures, and algorithms.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>📞 Contact Me</h2>
+    <form id="contactForm" action="/send-message" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="contact-btn">Send Message 🚀</button>
+    </form>
+  </section>
+
+
+  <footer id="footer">
+    <div class="footer-container">
+      <a href="" target="_blank">🌐 GitHub</a>
+      <a href="">📧 Email</a>
+      <a href="www.linkedin.com/in/anurag-jaiswal-32a263258" target="_blank">🔗 LinkedIn</a>
+    </div>
+    <p>© 2025 Anurag Jaiswal. Crafted with 💙 and JavaScript.</p>
+  </footer>
+
+
+
+  <!-- More sections coming soon -->
+  <script src="script.js"></script>
+</body>
+
+</html>
