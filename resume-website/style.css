@@ -191,6 +191,7 @@ nav {
   width: 80%;
   border-radius: 8px;
 }
+
 .modal-content a {
   text-decoration: none;
 }
@@ -201,9 +202,10 @@ nav {
 }
 .projects h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
 }
+
 .projects {
   padding: 2rem;
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
@@ -214,12 +216,18 @@ nav {
   margin: 10px;
   border-radius: 10px;
   cursor: pointer;
-  width: 200px;
+  width: 300px;
   height: 300px;
+}
+.project-card p{
+  margin-top: 1rem;
 }
 .project-content {
   display: flex;
   justify-content: space-evenly;
+}
+.project-card h3{
+  font-size: 1.2rem;
 }
 
 /* timeline  */
@@ -350,3 +358,4 @@ body.dark-mode .modal-content{
 }
 
 /* Add more as needed */
+
